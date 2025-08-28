@@ -1,154 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>te adoro muito yaya</title>
-        <style>
-             body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #c94f7c, #d8a7e0, #ffd580);
-      font-family: 'Arial', sans-serif;
-      color: #4a0033; 
+<head>
+  <meta charset="UTF-8" />
+  <title>te adoro muito yaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{
+      margin:0; padding:0;
+      background: linear-gradient(135deg,#c94f7c,#d8a7e0,#ffd580);
+      font-family: Arial, sans-serif; color:#4a0033;
     }
-
-    .letter-container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    .letter-container{
+      max-width: 860px; margin: 24px auto; padding: 24px;
+      background: rgba(255,255,255,.75); border-radius:16px;
+      box-shadow: 0 0 15px rgba(0,0,0,.2);
     }
-
-    .image-container {
-      text-align: center;
-      margin-bottom: 20px;
+    .image-container{ text-align:center; margin-bottom: 16px; }
+    .image-container img{ max-width:100%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,.3); }
+    .yaya, .carta-extra{ font-size:18px; line-height:1.8; text-align:justify; }
+    .section-title{
+      margin: 18px 0 8px; font-size:22px; text-align:center; font-weight:bold;
     }
-
-    .image-container img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    .divider{
+      width:120px; height:4px; border-radius:4px; margin:0 auto 14px;
+      background: linear-gradient(90deg,#c94f7c,#ffd580);
+      opacity:.9;
     }
-
-    .yaya {
-      font-size: 18px;
-      line-height: 1.8;
-      text-align: justify;
+    .toggle{
+      display:block; margin:16px auto 0; padding:10px 18px; border:0;
+      border-radius:999px; cursor:pointer; font-size:16px; color:#fff;
+      background:#c94f7c; transition:opacity .2s;
     }
-
- .petal {
-    position: fixed;
-    top: -50px;
-    color: #c94f7c;
-    font-size: 24px;
-    opacity: 0.7;
-    animation: fall linear infinite;
-    pointer-events: none;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(100vh) rotate(360deg);
-      opacity: 0.3;
+    .toggle:hover{ opacity:.9; }
+    .video-container{ text-align:center; margin: 16px 0 8px; }
+    .music-button{
+      display:block; margin: 10px auto 22px; padding:12px 20px; border:0;
+      border-radius:999px; font-size:16px; cursor:pointer; color:#fff; background:#e63946;
     }
-  }
-
-    .music-button {
-      display: block;
-      margin: 20px auto;
-      padding: 12px 20px;
-      background: #e63946;
-      color: white;
-      text-decoration: none;
-      border: none;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
+    .music-button:hover{ opacity:.9; }
+    .carta-extra{ display:none; }
+    .petal{
+      position:fixed; top:-50px; color:#c94f7c; font-size:24px; opacity:.7;
+      animation: fall linear infinite; pointer-events:none; z-index:9999;
     }
+    @keyframes fall{ to{ transform: translateY(100vh) rotate(360deg); opacity:.3; } }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <div class="image-container">
+      <img src="" alt="a gente" />
+    </div>
 
-    .music-button:hover {
-      background: #b71c1c;
-    }
-        </style>
-    </head>
-    <body>
-        <div class="letter-container">
-            <div class="image-container">
-                <img src="" alt="a gente">
-            </div>
-            <div class="yaya">
-                Meu girassol lindo, cada momento ao seu lado é como um raio de sol iluminando meu coração. 
-                Você enche meu mundo de tanta luz, amor e felicidade. Eu amo cuidar de você, porque você merece todo o carinho e amor do mundo. 
-                Você merece ser feliz. E eu falo de uma felicidade verdadeira, daquela que aquece o coração e traz paz. 
-                Você merece sentir o que é estar bem de verdade. 
-                Sentir que o mundo não está contra você. 
-                Sentir que não precisa lutar contra a maré todos os dias só para não afundar. 
-                Mais do que tudo, você merece estar bem. 
-                Eu sei que às vezes é difícil acreditar nisso, principalmente quando a tristeza aperta e quando parece que está longe de amar a si mesma. 
-                Mas ainda assim eu quero que você saiba: um dia você vai se sentir bem de novo. 
-                Um dia você vai sorrir sem esforço, vai se sentir leve outra vez. 
-                É só uma questão de tempo, e eu vou estar contigo em cada passo desse caminho.
-                Você é especial, sabia? Única. Ninguém tem o seu jeitinho, ninguém sorri como você sorri, ninguém tem a sua risada que ilumina tudo quando algo te faz feliz. 
-                Não existe ninguém como você. O mundo sem você não seria o mesmo, mesmo que você não enxergue isso agora. 
-                Cada existência importa, e a sua tem um valor imenso. Você está aqui por um motivo. Está respirando por um motivo. 
-                E, mesmo nos dias difíceis, eu quero que você lembre: você nunca está sozinha. 
-                Eu vejo o seu coração, acredito na sua força e vou estar sempre aqui, te apoiando, te incentivando e te amando da maneira mais completa que eu puder.
-                Não desista, mi niña hermosa de ojos negros. Você é tão especial para mim que eu nem consigo colocar em palavras. Dói em mim quando você é dura consigo mesma, porque você não merece esse peso. Você merece tudo de bom, tudo de doce, tudo de lindo. E eu quero ser alguém que te dá isso. Eu não sou perfeito, mas quero ser o melhor para você. Quero estar ao teu lado em cada momento, te apoiar em cada passo e segurar a tua mão em cada tropeço. Você é muito importante para mim, meu bem, mais do que você imagina. Obrigado por ser você. Eu te amo, te adoro e te escolho todos os dias. Para mim, você sempre será meu amor, meu girassol, minha felicidade e meu tudo.
-            </div>
+    <h2 class="section-title">Para você, meu girassol 🌻</h2>
+    <div class="divider"></div>
 
-<div class="video-container" style="text-align:center; margin-top:20px;">
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/V7LlxtgEZeI?si=uI8aRCjUrgsI_lAk" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-  </iframe>
-</div>
-        </div>
-        <button class="music-button" onclick="toggleMusic()">🎵</button>
-    </body>
-    
+    <!-- TU TEXTO ORIGINAL -->
+    <div class="yaya">
+      Meu girassol lindo, cada momento ao seu lado é como um raio de sol iluminando meu coração. 
+      Você enche meu mundo de tanta luz, amor e felicidade. Eu amo cuidar de você, porque você merece todo o carinho e amor do mundo. 
+      Você merece ser feliz. E eu falo de uma felicidade verdadeira, daquela que aquece o coração e traz paz. 
+      Você merece sentir o que é estar bem de verdade. 
+      Sentir que o mundo não está contra você. 
+      Sentir que não precisa lutar contra a maré todos os dias só para não afundar. 
+      Mais do que tudo, você merece estar bem. 
+      Eu sei que às vezes é difícil acreditar nisso, principalmente quando a tristeza aperta e quando parece que está longe de amar a si mesma. 
+      Mas ainda assim eu quero que você saiba: um dia você vai se sentir bem de novo. 
+      Um dia você vai sorrir sem esforço, vai se sentir leve outra vez. 
+      É só uma questão de tempo, e eu vou estar contigo em cada passo desse caminho.
+      Você é especial, sabia? Única. Ninguém tem o seu jeitinho, ninguém sorri como você sorri, ninguém tem a sua risada que ilumina tudo quando algo te faz feliz. 
+      Não existe ninguém como você. O mundo sem você não seria o mesmo, mesmo que você não enxergue isso agora. 
+      Cada existência importa, e a sua tem um valor imenso. Você está aqui por um motivo. Está respirando por um motivo. 
+      E, mesmo nos dias difíceis, eu quero que você lembre: você nunca está sozinha. 
+      Eu vejo o seu coração, acredito na sua força e vou estar sempre aqui, te apoiando, te incentivando e te amando da maneira mais completa que eu puder.
+      Não desista, mi niña hermosa de ojos negros. Você é tão especial para mim que eu nem consigo colocar em palavras. Dói em mim quando você é dura consigo mesma, porque você não merece esse peso. Você merece tudo de bom, tudo de doce, tudo de lindo. E eu quero ser alguém que te dá isso. Eu não sou perfeito, mas quero ser o melhor para você. Quero estar ao teu lado em cada momento, te apoiar em cada passo e segurar a tua mão em cada tropeço. Você é muito importante para mim, meu bem, mais do que você imagina. Obrigado por ser você. Eu te amo, te adoro e te escolho todos os dias. Para mim, você sempre será meu amor, meu girassol, minha felicidade e meu tudo.
+    </div>
+
+    <button class="toggle" id="toggleCarta">💌 Ver carta especial</button>
+
+    <div class="carta-extra" id="cartaExtra">
+      <h2 class="section-title">Carta especial para você</h2>
+      <div class="divider"></div>
+      <p>💌Prometo amarte, incluso cuando sientas que eres imposible de amar. Prometo levantarte cuando estés caída, ser tu mayor fan en cada éxito y tu refugio más suave en cada fracaso. Prometo bailar contigo en la cocina, aunque no haya música. Prometo siempre ser yo mismo contigo y aceptarte exactamente como eres. Prometo ser esa persona que, en medio de una multitud, te busca con la mirada solo para asegurarse de que estés bien. Prometo nunca dejar de aprender de ti, seguir enamorándome de quien eres y de quien serás. Prometo escogerte cada día, una y otra vez. Prometo no dejar que la chispa se apague, seguir haciendo las pequeñas cosas que te hacen feliz y sostenerte para siempre en mi corazón, mientras viva.</p>
+      <p>💌<strong>Gracias.</strong> Por llegar en el momento oportuno. Por no salir corriendo de mis oscuridades. Por sostenerme la mano con tanta delicadeza. Por reírte incluso de mis chistes malos. Por saber cuándo es momento de una caricia. Por tu sinceridad que nunca hiere. Por ser tú y dejarme ser yo. Gracias, así, con mayúsculas.</p>
+      <p>💌Quiero que sepas cuánto significas para mí. No eres solo alguien importante: eres alguien que llevo conmigo en cada pensamiento, en cada instante de calma o de esperanza por el futuro. Tu presencia en mi vida me da calor, paz y una serenidad difícil de describir con palabras. Incluso en tus días más duros, quiero que recuerdes que nunca estarás sola: yo veo tu corazón, creo en tu fuerza, y siempre estaré aquí para apoyarte, para animarte y para amarte de todas las formas posibles.</p>
+      <p>💌Mi pecho será siempre tu refugio: para que apoyes tu cabeza, para que llores, para que descanses y duermas en paz.</p>
+      <p>💌En caso de que nadie te lo haya dicho últimamente: estoy orgulloso de ti. Veo cuánto te esfuerzas y todo lo que haces para mantenerlo todo en pie. Aunque pienses que nadie lo nota, yo sí. Lo que haces importa, lo que eres importa, y va a mejorar, te lo prometo. Mantén la cabeza en alto, porque lo mejor aún está por venir.</p>
+      <p>💌Eres una persona maravillosa, y mientras yo exista, siempre tendrás a alguien que te cuide, te acompañe y se sienta orgulloso de ti. Eres lo más valioso que tengo en este mundo. Te amo más de lo que mis palabras pueden expresar, y espero que nunca dudes del gran amor que siento por ti. Mi vida cambió para siempre desde que llegaste, y hoy soy la persona más feliz gracias a ti. Me encanta todo de ti: tu forma de ser, tus detalles, tu manera única de hacer que mi mundo tenga sentido. Nunca quiero que te alejes de mi vida, porque sin ti nada sería igual. Siempre serás mi felicidad, mi todo, mi siempre.</p>
+      <p>💌Y quiero que lo recuerdes bien: no te amaré a medias. Estoy aquí por completo, con todo lo que soy. No solo cuando estés bien, sino cuando estés en silencio, cuando el peso del mundo sea demasiado y no sepas qué decir. No voy a pedirte que sonrías ni que estés bien, solo que vengas a mí con lo que tengas, incluso si es caótico o duele. No me quedaré con la mejor versión de ti: estoy aquí por todas tus partes, incluso las que aún estás aprendiendo a sostener.</p>
+    </div>
+  </div>
+
+  <!-- Video -->
+  <div class="video-container">
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/V7LlxtgEZeI?si=uI8aRCjUrgsI_lAk"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <!-- Música -->
+  <button class="music-button" onclick="toggleMusic()">🎶 Tocar/Parar música</button>
   <audio id="bg-music" loop>
-    <source src="https://raw.githubusercontent.com/KJC-dev11/yaya-te-adoro/main/song/teadoro.mp3" type="audio/mp3">
+    <source src="https://raw.githubusercontent.com/KJC-dev11/yaya-te-adoro/main/song/teadoro.mp3" type="audio/mp3" />
     Seu navegador nao suporta o audio.
   </audio>
 
-    <script>
-  // petalos cantidad
-  const numPetals = 20; 
-  for (let i = 0; i < numPetals; i++) {
-    let petal = document.createElement("div");
-    petal.classList.add("petal");
-    petal.innerHTML = "🌸"; // test "💜" o "🌹"
-
-    //  horizontal aleatoria
-    petal.style.left = Math.random() * 100 + "vw";
-    //  aleatoria de la caida
-    petal.style.animationDuration = 5 + Math.random() * 10 + "s";
-    // tamaño aleatorio
-    petal.style.fontSize = 16 + Math.random() * 24 + "px";
-
-    document.body.appendChild(petal);
-
-    // eliminar patalo cuando termine y volver a crearlo
-    petal.addEventListener("animationend", () => {
-      petal.remove();
-      document.body.appendChild(petal.cloneNode(true));
-    });
-  }
-
-      const music = document.getElementById("bg-music");
-    let playing = false;
-    function toggleMusic() {
-      if (playing) {
-        music.pause();
-      } else {
-        music.play();
-      }
-      playing = !playing;
+  <script>
+    // Pétalos 🌸
+    const numPetals=20;
+    for(let i=0;i<numPetals;i++){
+      const p=document.createElement("div");
+      p.className="petal"; p.innerHTML="🌸";
+      p.style.left=Math.random()*100+"vw";
+      p.style.animationDuration=5+Math.random()*10+"s";
+      p.style.fontSize=16+Math.random()*24+"px";
+      document.body.appendChild(p);
+      p.addEventListener("animationend",()=>{ p.remove(); document.body.appendChild(p.cloneNode(true)); });
     }
-</script>
+
+    // Música 🎵
+    const music=document.getElementById("bg-music"); let playing=false;
+    function toggleMusic(){ playing ? music.pause() : music.play(); playing=!playing; }
+    window.toggleMusic=toggleMusic;
+
+    // Mostrar/Ocultar carta especial
+    const btn=document.getElementById("toggleCarta");
+    const extra=document.getElementById("cartaExtra");
+    btn.addEventListener("click",()=>{
+      const open=extra.style.display==="block";
+      extra.style.display=open?"none":"block";
+      btn.textContent=open?"💌 Ver carta especial":"💌 Ocultar carta especial";
+      if(!open) extra.scrollIntoView({behavior:"smooth", block:"start"});
+    });
+  </script>
+</body>
 </html>
