@@ -139,5 +139,16 @@
       document.body.appendChild(petal.cloneNode(true));
     });
   }
+
+      const music = document.getElementById("bg-music");
+    let playing = false;
+    function toggleMusic() {
+      if (playing) {
+        music.pause();
+      } else {
+        music.play();
+      }
+      playing = !playing;
+    }
 </script>
 </html>
