@@ -4,7 +4,56 @@
         <meta charset = "UTC=8">
         <title>te adoro muito yaya</title>
         <style>
+             body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #c94f7c, #d8a7e0, #ffd580);
+      font-family: 'Arial', sans-serif;
+      color: #4a0033; 
+    }
 
+    .letter-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .yaya {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+ .petal {
+    position: fixed;
+    top: -50px;
+    color: #c94f7c;
+    font-size: 24px;
+    opacity: 0.7;
+    animation: fall linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0.3;
+    }
+  }
         </style>
     </head>
     <body>
@@ -31,6 +80,46 @@
                 Eu vejo o seu coração, acredito na sua força e vou estar sempre aqui, te apoiando, te incentivando e te amando da maneira mais completa que eu puder.
                 Não desista, mi niña hermosa de ojos negros. Você é tão especial para mim que eu nem consigo colocar em palavras. Dói em mim quando você é dura consigo mesma, porque você não merece esse peso. Você merece tudo de bom, tudo de doce, tudo de lindo. E eu quero ser alguém que te dá isso. Eu não sou perfeito, mas quero ser o melhor para você. Quero estar ao teu lado em cada momento, te apoiar em cada passo e segurar a tua mão em cada tropeço. Você é muito importante para mim, meu bem, mais do que você imagina. Obrigado por ser você. Eu te amo, te adoro e te escolho todos os dias. Para mim, você sempre será meu amor, meu girassol, minha felicidade e meu tudo.
             </div>
+            </div>
+
+<div class="video-container" style="text-align:center; margin-top:20px;">
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/V7LlxtgEZeI?si=uI8aRCjUrgsI_lAk" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+</div>
         </div>
     </body>
+    
+  <audio id="bg-music" loop>
+    <source src="https://kjc-dev11.github.io/alice/song/Thinking Bout You.mp3" type="audio/mp3">
+    Seu navegador nao suporta o audio.
+  </audio>
+
+    <script>
+  // petalos cantidad
+  const numPetals = 20; 
+  for (let i = 0; i < numPetals; i++) {
+    let petal = document.createElement("div");
+    petal.classList.add("petal");
+    petal.innerHTML = "🌸"; // test "💜" o "🌹"
+
+    //  horizontal aleatoria
+    petal.style.left = Math.random() * 100 + "vw";
+    //  aleatoria de la caida
+    petal.style.animationDuration = 5 + Math.random() * 10 + "s";
+    // tamaño aleatorio
+    petal.style.fontSize = 16 + Math.random() * 24 + "px";
+
+    document.body.appendChild(petal);
+
+    // eliminar patalo cuando termine y volver a crearlo
+    petal.addEventListener("animationend", () => {
+      petal.remove();
+      document.body.appendChild(petal.cloneNode(true));
+    });
+  }
+</script>
 </html>
